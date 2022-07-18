@@ -86,7 +86,7 @@ def index():
         chat_id,txt = parse_message(msg)
         if txt == "/help":
             tel_send_message(chat_id,"COMMAND BOT \n Arsyila \n siapa wanita tercantik? \n pasangan terbaik? \n haris nyebelin? \n kamu itu apa? \n /polling \n /cuek \n /gombal")
-        if txt == "siapa namamu?":
+        if txt == string.lower("Siapa namamu?"):
             namamu = ["Arsyila" , "Haris"]
             tel_send_message(chat_id,random.choice(namamu))
 
