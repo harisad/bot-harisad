@@ -11,7 +11,6 @@ def parse_message(message):
     print("message-->",message)
     chat_id = message['message']['chat']['id']
     txt = message['message']['text']
-    txt = string.lower(txt)
     print("chat_id-->", chat_id)
     print("txt-->", txt)
     return chat_id,txt
